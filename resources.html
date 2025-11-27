@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center">Agricultural Resources</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Helpful Links -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h2 class="text-xl font-bold text-green-800 mb-4"><i class="fa-solid fa-link mr-2"></i>Official Portals</h2>
+            <ul class="space-y-4">
+                <li>
+                    <a href="https://www.apnikheti.com" target="_blank" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition group">
+                        <span class="font-medium text-gray-700 group-hover:text-green-700">Apni Kheti (Farming Guide)</span>
+                        <i class="fa-solid fa-external-link-alt text-gray-400"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://agricoop.nic.in" target="_blank" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition group">
+                        <span class="font-medium text-gray-700 group-hover:text-green-700">Department of Agriculture (GoI)</span>
+                        <i class="fa-solid fa-external-link-alt text-gray-400"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pmkisan.gov.in/" target="_blank" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition group">
+                        <span class="font-medium text-gray-700 group-hover:text-green-700">PM Kisan Samman Nidhi</span>
+                        <i class="fa-solid fa-external-link-alt text-gray-400"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="bg-green-900 text-white p-8 rounded-2xl shadow-lg relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-xl font-bold mb-4">Farmer Helpline (Kisan Call Center)</h2>
+                <div class="text-4xl font-black mb-2">1800-180-1551</div>
+                <p class="opacity-80 text-sm mb-6">Available 6:00 AM to 10:00 PM (All days)</p>
+                
+                <h3 class="font-bold mt-6 mb-2">Project Support Team</h3>
+                <p class="text-sm opacity-80">Email: support@cropguard.ai</p>
+                <p class="text-sm opacity-80">Location: [Your College Name]</p>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-green-800 rounded-full opacity-50"></div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
