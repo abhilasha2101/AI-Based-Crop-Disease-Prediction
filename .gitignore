@@ -1,0 +1,26 @@
+# Java / Maven
+backend/target/
+*.class
+*.jar
+*.war
+
+# Python
+ml-service/__pycache__/
+ml-service/models/__pycache__/
+ml-service/training/__pycache__/
+ml-service/uploads/
+*.pyc
+.env
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Uploads
+uploads/

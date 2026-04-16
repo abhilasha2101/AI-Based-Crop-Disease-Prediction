@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: crop-disease-api
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/cropai
+      database: cropai
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# JWT Configuration
+app:
+  jwt:
+    secret: YourSuperSecretKeyForJWTTokenGeneration2024CropAIDiseasePrediction
+    expiration-ms: 86400000  # 24 hours
+  ml-service:
+    url: http://localhost:8000
+  weather:
+    api-key: YOUR_OPENWEATHERMAP_API_KEY
+    base-url: https://api.openweathermap.org/data/2.5
+  upload:
+    dir: ./uploads
+
+logging:
+  level:
+    com.cropai: DEBUG
+    org.springframework.security: INFO
